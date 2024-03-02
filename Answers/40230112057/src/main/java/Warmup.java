@@ -10,7 +10,7 @@ public class Warmup {
         String number1=Integer.toString(number);
         if(number>ok.length)
             return "Number = "+number1+" is out Of Bound";
-        return ok[n-1];
+        return ok[number-1];
     }
 
     /**
