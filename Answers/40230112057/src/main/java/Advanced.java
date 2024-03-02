@@ -9,7 +9,7 @@ public class Advanced {
      * You have to search the sentence to find the word that you were given as input and change it with the newWord
 
      */
-    public String wordCensor(String sentence, String word, String newWord){
+    public static String wordCensor(String sentence, String word, String newWord){
         String[] splitt=sentence.split(" ");
         for(int i=0;i<splitt.length;i++){
             if(splitt[i].equals(word)==true){
@@ -29,7 +29,7 @@ public class Advanced {
      * @param lastName is a last name with irregular letters (example : pOtTeR)
      * @return fullName is a normal full name that just the first letter of firstName & lastName is Capitalized (example : Harry Potter)
      */
-    public String normalizingName(String firstName, String lastName){
+    public static String normalizingName(String firstName, String lastName){
         String First=firstName.toLowerCase();
         String Second=lastName.toLowerCase();
         char[] neww1=First.toCharArray();
@@ -46,7 +46,7 @@ public class Advanced {
      * @param word This input could have Consecutive repeated letters or not
      * @return if word contains Consecutive repeated letters, one of the repeated letters should be omitted
      */
-    public String doubleChar(String word) {
+    public static String doubleChar(String word) {
         char[] Word=word.toCharArray();
         String finall="";
         int j=0;
