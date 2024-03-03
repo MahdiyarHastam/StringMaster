@@ -18,7 +18,10 @@ public class Advanced {
         }
         String neww=new String();
         for(int i=0;i<splitt.length;i++){
-            neww=neww.concat(splitt[i]+" ");
+            if(i==splitt.length-1)
+                neww=neww.concat(splitt[i]);
+            else
+                neww=neww.concat(splitt[i]+" ");
         }
         return neww;
     }
@@ -38,6 +41,12 @@ public class Advanced {
         neww2[0]-=32;
         String akhari=new String(neww1);
         String akharii=new String(neww2);
+        if(firstName.contains(" ") ){
+            return akharii;
+        }else if(lastName.contains(" ")){
+            return akhari;
+        }
+
         return akhari+" "+akharii;
     }
 

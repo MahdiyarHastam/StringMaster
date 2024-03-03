@@ -9,7 +9,7 @@ public class Warmup {
         String[] ok=sentence.split(" ");
         String number1=Integer.toString(number);
         if(number>ok.length)
-            return "Number = "+number1+" is out Of Bound";
+            return " Number = "+number1+" is out Of Bound";
         return ok[number-1];
     }
 
