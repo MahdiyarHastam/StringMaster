@@ -21,7 +21,7 @@ public class Advanced {
      */
     public String normalizingName(String firstName, String lastName){
         return null;
-    }
+    }//sdfsdfsdf
 
     /**
      * Removing repeated letter in a word
